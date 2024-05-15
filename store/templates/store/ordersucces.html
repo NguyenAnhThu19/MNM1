@@ -1,0 +1,143 @@
+{% extends 'store/main.html' %}
+
+{% load static %}
+{% block order2 %}
+
+<div class="container-fluid my-5  d-flex  justify-content-center">
+    <div class="card card-1">
+        <div class="card-header bg-white">
+            <div class="media flex-sm-row flex-column-reverse justify-content-between  ">
+                <div class="col my-auto"> <h4 class="mb-0">Cảm ơn bạn đã đặt hàng,{{request.user}}<span class="change-color"></span> !</h4> </div>
+                <div class="col-auto text-center  my-auto pl-0 pt-sm-4">
+    
+                     <p class="mb-4 pt-0 Glasses">Giỏ hàng của bạn </p>  </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row justify-content-between mb-3">
+                <div class="col-auto"> <h6 class="color-1 mb-0 change-color">Chi tiết</h6> </div>
+                <div class="col-auto  "> <small>Mã đơn hàng:1 </small> </div>
+            </div>   
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="card card-2">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="sq align-self-center "> <img class="img-fluid  my-auto align-self-center mr-2 mr-md-4 pl-0 p-0 m-0" src="https://product.hstatic.net/200000184395/product/b13_bf43d4acbfda4b6e98cc5916c465c1b5_master.jpg" width="135" height="135" /> </div>
+                                <div class="media-body my-auto text-right">
+                                    <div class="row  my-auto flex-column flex-md-row">
+                                        <div class="col-auto my-auto "> <h6 class="mb-0"> Ghế xoay</h6> </div>
+                                        <div class="col my-auto  "> <small>Số lượng: 2 </small></div>
+                                        <div class="col my-auto ">  <h6 class="mb-0">3.000.000 VND</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-3 ">
+                            <div class="row ">
+                                <div class="col-md-3 mb-3">  <small> Tình trạng đơn hàng<span><i class=" ml-2 fa fa-refresh" aria-hidden="true"></i></span></small> </div>
+                                <div class="col mt-auto">
+                                    <div class="progress"><div class="progress-bar progress-bar  rounded" style="width: 18%"  role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div> </div>
+                                    <div class="media row justify-content-between ">
+                                        <div class="col-auto text-right"><span> <small  class="text-right mr-sm-2"></small> <i class="fa fa-circle active"></i> </span></div>
+                                        <div class="flex-col"> <span> <small class="text-right mr-sm-2">Đã rời kho</small><i class="fa fa-circle"></i></span></div>
+                                        <div class="col-auto flex-col-auto"><smallclass="text-right mr-sm-2">Hoàn thành</small><span> <i class="fa fa-circle"></i></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="card card-2">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="sq align-self-center "> <img class="img-fluid  my-auto align-self-center mr-2 mr-md-4 pl-0 p-0 m-0" src="https://noithatthienvuong.com/wp-content/uploads/2019/12/sofa-vang-ni-3.jpg" width="135" height="135" /> </div>
+                                <div class="media-body my-auto text-right">
+                                    <div class="row  my-auto flex-column flex-md-row">
+                                        <div class="col-auto my-auto "> <h6 class="mb-0"> Ghế thư giãn </h6> </div>
+                                        <div class="col my-auto  "> <small>Số lượng: 2 </small></div>
+                                        <div class="col my-auto ">  <h6 class="mb-0">3.320.000 VND</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-3 ">
+                            <div class="row ">
+                                <div class="col-md-3 mb-3">  <small> Tình trạng đơn hàng<span><i class=" ml-2 fa fa-refresh" aria-hidden="true"></i></span></small> </div>
+                                <div class="col mt-auto">
+                                    <div class="progress"><div class="progress-bar progress-bar  rounded" style="width: 18%"  role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div> </div>
+                                    <div class="media row justify-content-between ">
+                                        <div class="col-auto text-right"><span> <small  class="text-right mr-sm-2"></small> <i class="fa fa-circle active"></i> </span></div>
+                                        <div class="flex-col"> <span> <small class="text-right mr-sm-2">Đã rời kho</small><i class="fa fa-circle"></i></span></div>
+                                        <div class="col-auto flex-col-auto"><smallclass="text-right mr-sm-2">Hoàn thành</small><span> <i class="fa fa-circle"></i></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="card card-2">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="sq align-self-center "> <img class="img-fluid  my-auto align-self-center mr-2 mr-md-4 pl-0 p-0 m-0" src="https://noithatgiakho.com/upload/sanpham/large/giuong-ngu-boc-nem-da-dep-hien-dai-gia-re.jpg" width="135" height="135" /> </div>
+                                <div class="media-body my-auto text-right">
+                                    <div class="row  my-auto flex-column flex-md-row">
+                                        <div class="col-auto my-auto "> <h6 class="mb-0">Giường happy</h6> </div>
+                                        <div class="col my-auto  "> <small>Số lượng: 2 </small></div>
+                                        <div class="col my-auto ">  <h6 class="mb-0">11.000.000 VND</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-3 ">
+                            <div class="row ">
+                                <div class="col-md-3 mb-3">  <small> Tình trạng đơn hàng<span><i class=" ml-2 fa fa-refresh" aria-hidden="true"></i></span></small> </div>
+                                <div class="col mt-auto">
+                                    <div class="progress"><div class="progress-bar progress-bar  rounded" style="width: 18%"  role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div> </div>
+                                    <div class="media row justify-content-between ">
+                                        <div class="col-auto text-right"><span> <small  class="text-right mr-sm-2"></small> <i class="fa fa-circle active"></i> </span></div>
+                                        <div class="flex-col"> <span> <small class="text-right mr-sm-2">Đã rời kho</small><i class="fa fa-circle"></i></span></div>
+                                        <div class="col-auto flex-col-auto"><smallclass="text-right mr-sm-2">Hoàn thành</small><span> <i class="fa fa-circle"></i></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="row justify-content-between">
+                        <div class="col-auto"><p class="mb-1 text-dark"><b>Hóa đơn</b></p></div>
+                        <div class="flex-sm-col text-right col"> <p class="mb-1"><b>Tiền hàng</b></p> </div>
+                        <div class="flex-sm-col col-auto"> <p class="mb-1">17.320.000 VND</p> </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="flex-sm-col text-right col"><p class="mb-1"> <b>Phí ship</b></p> </div>
+                        <div class="flex-sm-col col-auto"><p class="mb-1">100.000 VND</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="jumbotron-fluid">
+                <div class="row justify-content-between ">
+                    <div class="col-auto my-auto "><h2 class="mb-0 font-weight-bold">Tổng tiền</h2></div>
+                    <div class="col-auto my-auto ml-auto"><h1 class="display-3 "> 17.420.000 VND</h1></div>
+                </div>
+                <div class="row mb-3 mt-3 mt-md-0">
+                    <div class="col-auto border-line"> <small class="text-white">PAN:AA02hDW7E</small></div>
+                    <div class="col-auto border-line"> <small class="text-white">CIN:UMMC20PTC </small></div>
+                    <div class="col-auto "><small class="text-white">GSTN:268FD07EXX </small> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

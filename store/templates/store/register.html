@@ -1,0 +1,41 @@
+{% extends 'store/main.html' %}
+
+{% load static %}
+{% block register %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2 class="text-center text-dark mt-5">Register</h2>
+      <div class="text-center mb-5 text-dark">Anh thu cute</div>
+      <div class="card my-5">
+
+        <form class="card-body cardbody-color p-lg-5" method="POST" action =''>
+          {% csrf_token %}
+          <div class="text-center">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+              width="200px" alt="profile">
+          </div>
+
+          <div class="mb-3">
+            <label for="Username" class="form-label">User Name</label>
+            {{form.username}}
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+           {{form.password1}}
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          {{form.password2}}
+      </div>
+          <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Đăng ky</button></div>
+          <div id="emailHelp" class="form-text text-center mb-5 text-dark">Da co tài khoản? <a href={%url 'login' %} class="text-dark fw-bold"> Tạo tài khoản</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}
